@@ -1,9 +1,10 @@
-var slider = document.getElementById("myRange");
-var output = document.getElementById("demo");
-output.innerHTML = slider.value; // Display the default slider value
-console.log(slider.value);
+// Create some vars
+let slide = document.getElementById("myRange");
+let output = document.getElementById("demo");
+output.innerHTML = slide.value; // Display the default slider value
+// console.log(slide.value);
 
-// Update the current slider value (each time you drag the slider handle)
-slider.oninput = function() {
+// Update the current slide value (each time you drag the slider handle)
+slide.oninput = function() {
   output.innerHTML = this.value;
 }
